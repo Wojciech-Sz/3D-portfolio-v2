@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { words } from "~/constants";
+import Button from "../_components/Button";
 
 const Hero = () => {
   return (
@@ -43,6 +44,11 @@ const Hero = () => {
               based in Poland with a proven track record of delivering
               exceptional results.
             </p>
+            <Button
+              id="button"
+              className="h-12 w-60 md:h-16 md:w-80"
+              text="See my Work"
+            />
           </div>
         </header>
       </div>
