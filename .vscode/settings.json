@@ -43,5 +43,5 @@
     "**/.next": true,
     "**/next-env.d.ts": true
   },
-  "cSpell.words": ["Wojtek"]
+  "cSpell.words": ["GLTF"]
 }

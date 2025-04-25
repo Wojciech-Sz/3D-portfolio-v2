@@ -14,7 +14,7 @@ const Button = ({
 }) => {
   return (
     <Link
-      href="/#work"
+      href={id ?? "#"}
       scroll
       className={cn("cta-wrapper", className && className)}
     >
