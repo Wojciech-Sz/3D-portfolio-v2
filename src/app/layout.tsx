@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
+import Navbar from "./_components/Navbar";
 
 export const metadata: Metadata = {
   title: "W-SZ Portfolio",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geist.variable}`}>
-      <body className="dark">{children}</body>
+      <body className="dark">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
