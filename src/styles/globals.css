@@ -157,7 +157,7 @@ section {
   .app-showcase {
     @apply mt-20 flex w-full items-center justify-center px-5 py-10 md:px-20 md:py-20;
 
-    .showcaselayout {
+    .showcase-layout {
       @apply flex flex-col justify-between gap-10 xl:flex-row;
     }
 
