@@ -7,17 +7,12 @@ interface GlowCardProps {
   children: React.ReactNode;
   card: {
     review: string;
-    imgPath: string;
-    logoPath: string;
-    title: string;
-    date: string;
-    responsibilities: string[];
   };
   index: number;
 }
 
 const GlowCard = ({ children, card, index }: GlowCardProps) => {
-  const { review, imgPath, logoPath, title, date, responsibilities } = card;
+  const { review } = card;
 
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -41,7 +36,7 @@ const GlowCard = ({ children, card, index }: GlowCardProps) => {
         cardRefs.current[index] = el;
       }}
       onMouseMove={handleMouseMove(index)}
-      className="card card-border timeline-card rounded-xl p-10"
+      className="card card-border timeline-card mb-5 break-inside-avoid-column rounded-xl p-10"
     >
       <div className="glow" />
       <div className="mb-5 flex items-center gap-1">

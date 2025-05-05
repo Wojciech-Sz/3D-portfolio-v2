@@ -77,6 +77,7 @@ const Experience = () => {
                         alt={card.title}
                         width={100}
                         height={100}
+                        className="size-auto"
                       />
                     </div>
                   </GlowCard>
