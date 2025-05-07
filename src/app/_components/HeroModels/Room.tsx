@@ -9,8 +9,9 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 import type { JSX } from "react/jsx-runtime";
+import type { GLTF } from "three-stdlib";
 
-type GLTFResult = {
+type GLTFResult = GLTF & {
   nodes: {
     _________6_blinn1_0: THREE.Mesh;
     body1_blinn1_0: THREE.Mesh;
@@ -50,7 +51,6 @@ type GLTFResult = {
     lambert1: THREE.MeshStandardMaterial;
     phong1: THREE.MeshStandardMaterial;
   };
-  animations: THREE.AnimationClip[];
 };
 
 export function Room(props: JSX.IntrinsicElements["group"]) {
